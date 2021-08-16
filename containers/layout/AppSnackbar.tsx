@@ -1,10 +1,10 @@
 import React from 'react'
 import { Snackbar } from '@material-ui/core';
-import { GeneralState } from '../redux/GeneralReducer';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../reduxStore';
 import GeneralActionType from '../main/redux/generalReducer/GeneralActionType';
 import _ from 'lodash';
+import { GeneralState } from '../main/redux/generalReducer/GeneralReducer';
 
 // CONFIG
 const SNACK_DURATION = 6000
