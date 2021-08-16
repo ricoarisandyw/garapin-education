@@ -1,0 +1,55 @@
+.root {
+  display: flex;
+  min-height: 100vh;
+  background: #C4E538;
+}
+.toolbar {
+  padding-right: 24;
+}
+.toolbarIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px;
+  min-height: 64px;
+  min-width: 240px;
+}
+.appBar {
+  z-index: 1201;
+  transition: width cubic-bezier(0.4, 0, 0.6, 1) 195ms;
+}
+.appBarShift {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  transition: width cubic-bezier(0.4, 0, 0.6, 1) 195ms;
+}
+.menuButton {
+  margin-right: 36;
+}
+.menuButtonHidden {
+  display: none;
+}
+.title {
+  flex-grow: 1;
+}
+.appBarSpacer {
+  min-height: 64px;
+}
+.content {
+  flex-grow: 1;
+  height: 100vh;
+  overflow: auto;
+}
+.container {
+  padding-top: 16;
+  padding-bottom: 16;
+}
+.paper {
+  padding: 8;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+}
+.fixedHeight {
+  height: 240;
+}
