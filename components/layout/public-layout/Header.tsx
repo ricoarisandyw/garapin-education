@@ -63,7 +63,7 @@ const Header: React.FC = (props) => {
   const pawonLogo = (
     <Link href="/" passHref>
       <div className="header-logo" style={{cursor:"pointer",height:"100px",width:"100px"}}>
-        <NextImage fromUrl src="http://oss-id-jakarta-sigma-d01-a.ops.telkomsigma.co.id/garapinimage/Group%201314.jpg?Expires=1629121816&OSSAccessKeyId=4XABuCeIdNs9Nb58&Signature=lMxIhZ%2B5wxCH2MwIwcCfnWvSTY4%3D" alt="logo_garapin" />
+        <NextImage fromUrl src="http://oss-id-jakarta-sigma-d01-a.ops.telkomsigma.co.id/garapinimage/Group%201314.jpg" alt="logo_garapin" />
       </div>
     </Link>
   );
