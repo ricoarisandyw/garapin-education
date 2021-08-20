@@ -1,7 +1,7 @@
-module.exports = {
-  reactStrictMode: true,
-  iimages: {
-    loader: 'imgix',
-    path: 'https://example.com/myaccount/',
-  },
-}
+const withImages = require('next-images');
+
+module.exports = withImages({
+  webpack(config, options){
+    return config
+  }
+})

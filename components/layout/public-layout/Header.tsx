@@ -15,11 +15,10 @@ import Link from "next/link"
 import { useRouter } from "next/router";
 import MenuList from './MenuList'
 import './Header.module.css'
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
 const useStyles = makeStyles(() => ({
     header: {
-      backgroundColor: "#FFFFFF",
-      background: "#FFF",
       "@media (max-width: 900px)": {
         paddingLeft: 0,
       },
@@ -59,6 +58,19 @@ const Header: React.FC = (props) => {
   });
 
   const { mobileView, drawerOpen } = state;
+
+  const [fillHeader, setFillHeader] = React.useState(false)
+
+  useScrollPosition(
+    (props) => {
+      if (props.currPos.y < -100) {
+        setFillHeader(false)
+      } else {
+        setFillHeader(true)
+      }
+    },
+    [fillHeader]
+  )
 
   const pawonLogo = (
     <Link href="/" passHref>
@@ -136,7 +148,7 @@ const Header: React.FC = (props) => {
 
   return (
     <header>
-      <AppBar color="inherit" className={header}>
+      <AppBar elevation={fillHeader ? 0 : 3 } color={fillHeader ? "transparent" : "#fff"} className={header}>
         {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>
     </header>

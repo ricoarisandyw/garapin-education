@@ -69,96 +69,12 @@ a {
 
 /* Main */
 
-.service-card {
-  padding: 15px;
-  cursor: pointer;
-}
-
-.service-card:hover {
-  background: rgb(235, 235, 235);
-}
-
-.service-card-image {
-  height: 100px !important;
-  width: 100% !important;
-  position: relative !important;
-  object-fit: contain !important;
-  padding: 10px !important;
-}
-
-/* === Menu === */
-
-.menu-card {
-  border-radius: 16px !important;
-  height: 300px;
-  overflow: hidden;
-  transition: all .3s !important;
-  position: relative;
-}
-
-.menu-card .menu-image-container {
-  overflow: hidden; 
-  height: 300px;
-  border-radius: 12px !important;
-  transition: all .3s !important;
-}
-
-.menu-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: top;
-}
-
-.menu-remain {
-  background: white;
-  padding: 10px 20px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  border-radius: 50px;
-  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
-  transition: all .3s !important;
-}
-
 .one-line {
   overflow: hidden;
   text-overflow: ellipsis;
   /* height: 1rem; */
   white-space: nowrap;
   width: calc(100% - 100px);
-}
-
-/* Menu hover */
-
-.menu-card:hover {
-  padding: 10px;
-}
-
-.menu-card:hover .menu-image-container {
-  height: 170px;
-  width: 100%;
-}
-
-.menu-card:hover .menu-remain {
-  right: 20px;
-  top: 20px;
-}
-
-.menu-card:hover .cart-button {
-  top: 200px;
-}
-
-.menu-card:hover .cart-button-inc {
-  top: 200px;
-}
-
-.menu-card:hover .cart-button-dec {
-  top: 200px;
-}
-
-.menu-image-container div {
-  position: relative !important;
 }
 
 .imageMenuItem {
@@ -180,21 +96,6 @@ a {
   width: 100% !important;
   position: relative !important;
   height: auto !important;
-}
-
-.cart-button {
-  display: flex;
-  justify-content: center;
-}
-
-.cart-button img {
-  height: 30px !important;
-  width: 100%;
-  min-height: 30px !important; 
-}
-
-.title-link:hover {
-  text-decoration: underline;
 }
 
 /* === FONTS === */
@@ -290,4 +191,45 @@ footer ul {
   width: 30px !important;
   position:relative !important;
   object-fit: contain;
+}
+
+.btn-yellow {
+  border-radius: 50px !important;
+  padding: .75rem 2rem;
+  background: #F1C40E;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-green {
+  border-radius: 50px !important;
+  padding: .75rem 2rem;
+  background: rgb(81,205,113);
+  color: white;
+  cursor: pointer;
+}
+
+.text-green {
+  color: rgb(81,205,113);
+}
+
+.card-radius {
+  border-radius: 30px;
+  background: white;
+}
+
+p {
+  color: #ACB2C3;
+  font-size: small;
+}
+
+.simple-input {
+  background: #F6F7FB;
+  padding: .75rem 2rem;
+  width: 400px;
+  border: none;
+}
+
+.simple-input:focus {
+  border: none;
 }
