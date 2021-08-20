@@ -6,6 +6,7 @@ import {
     IconButton,
     Drawer,
     MenuItem,
+    colors,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState, useEffect } from "react";
@@ -148,7 +149,7 @@ const Header: React.FC = (props) => {
 
   return (
     <header>
-      <AppBar elevation={fillHeader ? 0 : 3 } color={fillHeader ? "transparent" : "#fff"} className={header}>
+      <AppBar elevation={fillHeader ? 0 : 3 } style={{background: fillHeader ? "transparent" : "white"}} className={header}>
         {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>
     </header>
