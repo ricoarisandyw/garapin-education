@@ -6,6 +6,8 @@
     margin-right: -2rem;
     margin-top: calc(-104px - 2rem);
     z-index: -2;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .people {
@@ -14,4 +16,6 @@
     right: 0;
     margin-right: 80px;
     z-index: -1;
+    display: flex;
+    justify-content: flex-end;
 }

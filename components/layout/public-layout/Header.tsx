@@ -75,8 +75,8 @@ const Header: React.FC = (props) => {
 
   const pawonLogo = (
     <Link href="/" passHref>
-      <div className="header-logo" style={{cursor:"pointer",height:"100px",width:"100px"}}>
-        <NextImage fromUrl src="http://oss-id-jakarta-sigma-d01-a.ops.telkomsigma.co.id/garapinimage/Group%201314.jpg" alt="logo_garapin" />
+      <div className="header-logo" style={{cursor:"pointer",height:"100%",width:"auto"}}>
+        <img src="/images/home/Group 1310.png" alt="logo" height={"100%"} style={{ padding: "1.5rem"}} />
       </div>
     </Link>
   );

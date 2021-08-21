@@ -1,6 +1,4 @@
-import Link from "next/link";
 import React from "react";
-import NextImage from "../../components/NextImage";
 import styles from './main.module.scss'
 
 export default function Main() {
@@ -9,10 +7,10 @@ export default function Main() {
             <div className="col-lg-12" style={{ padding: "2rem", minHeight: "70vh" }}>
                 <div className="position-relative">
                     <div className={styles.wave}>
-                        <img alt='wave' src={"/images/home/Bg Shape.png"} height="500px" />
+                        <img alt='wave' src={"/images/home/Bg Shape.png"} width="70%" />
                     </div>
-                    <div className={styles.people}>
-                        <img alt="people" src="/images/home/Group 1311.png" height="300px" />
+                    <div className={styles.people+" d-none d-lg-inline"}>
+                        <img alt="people" src="/images/home/Group 1311.png" width="70%" />
                     </div>
                     <div className="image-person"></div>
                     <div className="row">
@@ -24,8 +22,8 @@ export default function Main() {
                     </div>
                 </div>
             </div>
-            <div className="col-lg-6 pl-5 pr-5">
-                <img alt='wave' src={"/images/home/Group 1314.png"} height="500px" />
+            <div className="col-lg-6 px-5 text-end">
+                <img alt='wave' src={"/images/home/Group 1314.png"} width="100%" />
             </div>
             <div className="col-lg-6 p-5 m-auto">
                 <strong className="text-green">Biography</strong>
@@ -93,7 +91,7 @@ export default function Main() {
                 <span className="text-green">Pricing</span>
                 <h1>Our Pricing</h1>
                 <div className="row pt-1 p-5">
-                    <div className="col-sm-4 p-5">
+                    <div className="col-sm-4 p-lg-5 p-3">
                         <div className="card-radius shadow-lg p-5">
                             <h3 className="py-3">Paket Platinum</h3>
                             <p className="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam praesentium laudantium obcaecati ex sit, fugit dolores unde repellendus corporis veritatis doloremque odit enim? Voluptatibus alias reiciendis, modi architecto vel repellat.</p>
@@ -101,7 +99,7 @@ export default function Main() {
                             <span className="btn-green">See Details</span>
                         </div>
                     </div>
-                    <div className="col-sm-4 p-5">
+                    <div className="col-sm-4 p-lg-5 p-3">
                         <div className="card-radius shadow-lg p-5">
                             <h3 className="py-3">Paket Platinum</h3>
                             <p className="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam praesentium laudantium obcaecati ex sit, fugit dolores unde repellendus corporis veritatis doloremque odit enim? Voluptatibus alias reiciendis, modi architecto vel repellat.</p>
@@ -109,7 +107,7 @@ export default function Main() {
                             <span className="btn-green">See Details</span>
                         </div>
                     </div>
-                    <div className="col-sm-4 p-5">
+                    <div className="col-sm-4 p-lg-5 p-3">
                         <div className="card-radius shadow-lg p-5">
                             <h3 className="py-3">Paket Platinum</h3>
                             <p className="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam praesentium laudantium obcaecati ex sit, fugit dolores unde repellendus corporis veritatis doloremque odit enim? Voluptatibus alias reiciendis, modi architecto vel repellat.</p>
@@ -125,7 +123,7 @@ export default function Main() {
                     <h3>Apakah anda ingin mendapat <strong>Berita Terbaru Kami</strong></h3>
                 </div>
                 <div className="pb-5">
-                    <input placeholder="Drop your email" className="simple-input me-3" /><span className="btn-green">Subscribe</span>
+                    <input placeholder="Drop your email" className="simple-input me-3 mb-4" /><span className="btn-green">Subscribe</span>
                 </div>
             </div>
         </div>
